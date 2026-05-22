@@ -1,0 +1,49 @@
+flowchart LR
+    subgraph Input ["INPUT — Sumber Transaksi"]
+        direction TB
+        Q[QRIS]
+        P[POS]
+        M[Marketplace]
+        T[Transfer Bank]
+        IM[Input Manual]
+    end
+
+    subgraph Process ["PROCESSING"]
+        direction TB
+        ING["<b>Ingestion Service</b><br/>• Parse CSV / XLSX<br/>• Validasi schema<br/>• Deduplikasi<br/>• Normalisasi kategori"]
+        L[("<b>Ledger Usaha</b><br/>PostgreSQL")]
+        ING --> L
+    end
+
+    subgraph Analyze ["ANALYTICS &amp; AI"]
+        direction TB
+        FE["<b>Feature Extraction</b><br/>• Frekuensi &amp; nilai transaksi<br/>• Tren omzet<br/>• Pola jam / hari<br/>• Stabilitas pendapatan<br/>• Diversitas channel"]
+        AI["<b>AI / ML Service</b><br/>• Rule-based recs<br/>• Regresi tren<br/>• Future: XGBoost / clustering"]
+        FE --> AI
+    end
+
+    subgraph Output ["OUTPUT — UMKM"]
+        direction TB
+        D["<b>Dashboard Analytics</b><br/>KPI + tren + heatmap"]
+        HS["<b>Business Health Score</b><br/>5 komponen × bobot<br/>Skor 0–100"]
+        RC["<b>Rekomendasi Mingguan</b><br/>Prioritas tinggi/sedang/rendah"]
+    end
+
+    Input ==> Process
+    Process ==> Analyze
+    Analyze ==> Output
+
+    classDef inputStyle fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+    classDef processStyle fill:#DCFCE7,stroke:#16A34A,color:#14532D
+    classDef analyzeStyle fill:#FAE8FF,stroke:#A855F7,color:#6B21A8
+    classDef outputStyle fill:#FEF9C3,stroke:#CA8A04,color:#713F12
+
+    class Q,P,M,T,IM inputStyle
+    class ING,L processStyle
+    class FE,AI analyzeStyle
+    class D,HS,RC outputStyle
+
+    style Input fill:#EFF6FF,stroke:#3B82F6,stroke-width:2px
+    style Process fill:#F0FDF4,stroke:#16A34A,stroke-width:2px
+    style Analyze fill:#FDF4FF,stroke:#A855F7,stroke-width:2px
+    style Output fill:#FEFCE8,stroke:#CA8A04,stroke-width:2px

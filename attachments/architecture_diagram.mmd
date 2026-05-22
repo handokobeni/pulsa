@@ -1,0 +1,38 @@
+flowchart LR
+    UMKM([UMKM Owner])
+    Web[Web App / PWA]
+    API[Backend API<br/>Auth + RBAC]
+    Ing[Ingestion Service<br/>CSV / XLSX / Manual]
+    Storage[(Object Storage<br/>raw files)]
+    DB[(PostgreSQL<br/>Ledger Database)]
+    Analytics[Analytics Engine<br/>Aggregation + Metrics]
+    AI[AI / ML Service<br/>Health Score + Recs]
+    Cache[(Redis Cache)]
+
+    UMKM --> Web
+    Web <--> API
+    API --> Ing
+    Ing --> Storage
+    Ing --> DB
+    DB --> Analytics
+    Analytics --> DB
+    DB --> AI
+    AI --> DB
+    API <--> Cache
+    API --> DB
+
+    External[Future:<br/>Aggregator / Marketplace API] -.-> Ing
+
+    classDef user fill:#EEF2FF,stroke:#4F46E5,stroke-width:2px,color:#1F2937
+    classDef frontend fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A
+    classDef backend fill:#DCFCE7,stroke:#16A34A,color:#14532D
+    classDef data fill:#FEF3C7,stroke:#D97706,color:#78350F
+    classDef ai fill:#FCE7F3,stroke:#DB2777,color:#831843
+    classDef external fill:#F1F5F9,stroke:#64748B,stroke-dasharray:5 3,color:#334155
+
+    class UMKM user
+    class Web frontend
+    class API,Ing backend
+    class Storage,DB,Cache data
+    class Analytics,AI ai
+    class External external
