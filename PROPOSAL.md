@@ -1,6 +1,12 @@
 # PULSA
 ## Payment Understanding & Ledger for Smart Analytics
 
+> ⚠️ **DOKUMEN ARSIP — SUBMISSION PERTAMA (TAHAP 1)**
+>
+> Proposal ini adalah arsip submission tahap pertama. **Untuk submission tahap kedua (versi aktif), lihat [`PROPOSAL_TAHAP2.md`](PROPOSAL_TAHAP2.md)**.
+>
+> Perubahan positioning utama di Tahap 2: Sub-Problem direframe dari "Pemanfaatan Data Alternatif / Credit Scoring" menjadi **"Penguatan Produktivitas & Daya Saing UMKM Mikro melalui Demokratisasi Business Intelligence"** — fokus B2C/micro B2B, bukan credit scoring untuk lembaga keuangan. Tim & target juga disesuaikan ke realistis (2 founders, 150 UMKM Y1 → 7.500 Y3).
+
 ---
 
 # 1. TEAM IDENTITY
