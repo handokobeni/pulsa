@@ -1,5 +1,5 @@
 # 2ND SUBMISSION PROPOSAL — DIGDAYA x HACKATHON 2026
-# PULSA — Payment Understanding & Ledger for Smart Analytics
+# PULSA: AI Financial Intelligence untuk UMKM Berbasis Data Transaksi
 
 ---
 
@@ -25,7 +25,7 @@ Tim **404 Inovators** adalah tim *engineering* kecil dengan latar belakang *soft
 
 ### Executive Summary *(maks. 150 kata)*
 
-PULSA (*Payment Understanding & Ledger for Smart Analytics*) menjawab kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi oleh UMKM. Target pengguna utama adalah UMKM kuliner, retail, dan jasa yang sudah menerima pembayaran digital (QRIS, marketplace, transfer) tetapi tidak memiliki alat analitik bisnis yang sederhana. Solusi inti kami mengonsolidasi transaksi multi-channel menjadi satu ledger usaha, menghasilkan insight bisnis harian, **Business Health Score**, dan rekomendasi berbasis AI yang dapat langsung ditindaklanjuti. Sejak submission pertama, kami menajamkan empat hal: (1) prototype web interaktif 7 modul yang diakses publik, (2) metodologi Business Health Score dengan 5 komponen terdefinisi, (3) target dampak realistis berbasis kapasitas tim & ritme adopsi UMKM (150 UMKM tahun pertama → 7.500 dalam tiga tahun), dan (4) validasi pasar awal melalui survei kuantitatif (N=6 — sinyal WTP positif). Dampak yang ditargetkan: peningkatan produktivitas operasional UMKM, demokratisasi *business intelligence* yang sebelumnya hanya enterprise, dan penguatan daya saing UMKM mikro (61% PDB).
+PULSA (*Payment Understanding & Ledger for Smart Analytics*) menjawab kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi oleh UMKM. Target pengguna utama adalah UMKM kuliner, retail, dan jasa yang sudah menerima pembayaran digital (QRIS, marketplace, transfer) tetapi tidak memiliki alat analitik bisnis yang sederhana. Solusi inti kami mengonsolidasi transaksi multi-channel menjadi satu ledger usaha, menghasilkan insight bisnis harian, **Business Health Score**, dan rekomendasi berbasis AI yang dapat langsung ditindaklanjuti. Sejak submission pertama, kami menajamkan empat hal: (1) prototype web interaktif 7 modul yang diakses publik, (2) metodologi Business Health Score dengan 5 komponen terdefinisi, (3) target dampak realistis berbasis kapasitas tim & ritme adopsi UMKM (150 UMKM tahun pertama → 7.500 dalam tiga tahun), dan (4) validasi pasar awal melalui survei kuantitatif (N=7 — sinyal WTP positif). Dampak yang ditargetkan: peningkatan produktivitas operasional UMKM, demokratisasi *business intelligence* yang sebelumnya hanya enterprise, dan penguatan daya saing UMKM mikro (61% PDB).
 
 ---
 
@@ -35,7 +35,7 @@ PULSA (*Payment Understanding & Ledger for Smart Analytics*) menjawab kesenjanga
 **Peningkatan Produktivitas, Ketahanan Pangan, dan Penciptaan Lapangan Kerja**
 
 ### Primary Sub-Problem Statement
-**Inklusi Ekonomi (UMKM)**
+**Pemanfaatan Data Alternatif / Credit Scoring**
 
 ### Problem Validation *(maks. 180 kata)*
 
@@ -63,11 +63,11 @@ PULSA memetakan setiap masalah inti ke mekanisme solusi dan outcome terukur:
 
 **Problem 4 — Efektivitas marketing tidak terukur**
 → Mekanisme: Analisis kontribusi tiap *channel* terhadap revenue + korelasi pola promosi dengan momentum penjualan (roadmap V2 mencakup integrasi metrik konten media sosial).
-→ Outcome: Keputusan alokasi budget marketing berbasis ROI nyata. Validasi awal: **66,7% responden survei mengaku tidak yakin konten media sosial mana yang efektif menarik penjualan**.
+→ Outcome: Keputusan alokasi budget marketing berbasis ROI nyata. Validasi awal survei (N=7): **57,1% responden memilih analisis efektivitas konten media sosial sebagai fitur prioritas**, dan **42,9% mengaku menebak konten mana yang efektif menarik penjualan**.
 
 ### Ecosystem Alignment *(maks. 150 kata)*
 
-PULSA dirancang selaras dengan **Blueprint Sistem Pembayaran Indonesia 2025–2030** (Bank Indonesia) yang menempatkan digitalisasi UMKM sebagai pilar inklusi ekonomi, dan **POJK 22/2023** tentang Penyelenggara Inovasi Teknologi Sektor Keuangan untuk jalur *regulatory sandbox* bila dibutuhkan. **Stakeholder ekosistem**: (1) **UMKM** sebagai pengguna utama; (2) **Mitra distribusi**: agregator pembayaran (Midtrans, Xendit, QRIS aggregator), asosiasi UMKM (HIPMI, KADIN), komunitas kuliner/retail daerah; (3) **Mitra ekosistem micro B2B**: platform supplier/vendor UMKM, vendor POS lokal, lembaga pelatihan; (4) **Regulator**: Bank Indonesia (kerangka QRIS), OJK (UU PDP), Kemenkop UKM (program digitalisasi UMKM). Batasan implementasi: kepatuhan **UU No. 27/2022 (PDP)**, persetujuan eksplisit pengguna, keterbatasan akses API marketplace tanpa kerja sama formal. PULSA berkembang bertahap dari *ingestion* mandiri ke integrasi resmi seiring tumbuhnya kepercayaan ekosistem.
+PULSA dirancang selaras dengan **Blueprint Sistem Pembayaran Indonesia 2025–2030** (Bank Indonesia) yang menempatkan digitalisasi UMKM sebagai pilar inklusi ekonomi, dan **POJK 3/2024** tentang Penyelenggaraan Inovasi Teknologi Sektor Keuangan (ITSK) untuk jalur *regulatory sandbox* bila dibutuhkan. **Stakeholder ekosistem**: (1) **UMKM** sebagai pengguna utama; (2) **Mitra distribusi**: agregator pembayaran (Midtrans, Xendit, QRIS aggregator), asosiasi UMKM (HIPMI, KADIN), komunitas kuliner/retail daerah; (3) **Mitra ekosistem micro B2B**: platform supplier/vendor UMKM, vendor POS lokal, lembaga pelatihan; (4) **Regulator**: Bank Indonesia (kerangka QRIS), OJK (UU PDP), Kemenkop UKM (program digitalisasi UMKM). Batasan implementasi: kepatuhan **UU No. 27/2022 (PDP)**, persetujuan eksplisit pengguna, keterbatasan akses API marketplace tanpa kerja sama formal. PULSA berkembang bertahap dari *ingestion* mandiri ke integrasi resmi seiring tumbuhnya kepercayaan ekosistem.
 
 ---
 
@@ -108,7 +108,7 @@ PULSA menargetkan dampak pada tiga lapisan: pengguna langsung, ekosistem keuanga
 - Peningkatan literasi data UMKM secara progresif.
 - Penguatan disiplin pencatatan transaksi sebagai fondasi pertumbuhan & daya saing jangka panjang.
 
-**Counterfactual scenario**: Tanpa PULSA, UMKM rata-rata menghabiskan **2–3 jam/minggu** untuk rekapitulasi manual dan tetap kehilangan **5–10% revenue** dari peluang tak teridentifikasi (peak hours, produk terlaris). Dengan PULSA: rekapitulasi otomatis ≤15 menit/minggu + rekomendasi spesifik → uplift target **10–15% dalam 6 bulan** (KPI di Section 3.3).
+**Counterfactual scenario**: Tanpa PULSA, UMKM rata-rata menghabiskan **2–3 jam/minggu** untuk rekapitulasi manual dan tetap kehilangan **5–10% revenue** dari peluang tak teridentifikasi (peak hours, produk terlaris). Dengan PULSA: rekapitulasi otomatis ≤15 menit/minggu + rekomendasi spesifik → uplift target **10–15% dalam 6 bulan** (lihat *Impact Measurement*).
 
 **Skala data yang diproses:**
 - Tahun 1: ±450 ribu transaksi/bulan (100 transaksi/hari × 150 UMKM × 30 hari).
@@ -217,7 +217,7 @@ PULSA menerapkan beberapa pendekatan kreatif dalam distribusi, monetisasi, dan e
 
 **Monetisasi berlapis:**
 - *Freemium individual* — fitur inti (dashboard, Health Score, 3 rekomendasi/minggu) gratis untuk UMKM tunggal.
-- *Premium subscription* Rp 49.000–99.000/bulan untuk fitur lanjut: multi-cabang, export laporan, integrasi API langsung, rekomendasi tanpa batas.
+- *Premium subscription* — Rp 49.000/bulan (Individual: export laporan, rekomendasi tanpa batas) atau Rp 199.000/bulan (Bisnis: multi-cabang, integrasi API, multi-user role).
 - *Institutional licensing* — agregator pembayaran, asosiasi UMKM, koperasi, atau pemda membayar lisensi untuk dashboard *portfolio* merchant binaan (data anonim) atau integrasi analytics agregat.
 
 **Engagement berbasis kebiasaan UMKM:**
@@ -311,7 +311,7 @@ PULSA menempatkan keamanan dan kepatuhan sebagai bagian inti, bukan *add-on*.
 
 **Audit & monitoring**: Log akses dan perubahan data tersimpan; sistem mendeteksi anomali login (brute force, IP unusual).
 
-**Kepatuhan operasional**: Selaras dengan pedoman OJK (POJK 22/2023) bila ke depan PULSA berperan dalam ekosistem sektor keuangan; opsi registrasi *regulatory sandbox* untuk validasi *compliance* sebelum *scale up*.
+**Kepatuhan operasional**: Selaras dengan pedoman OJK (POJK 3/2024) bila ke depan PULSA berperan dalam ekosistem sektor keuangan; opsi registrasi *regulatory sandbox* untuk validasi *compliance* sebelum *scale up*.
 
 **Quality assurance & resiliensi**: target *unit test coverage* ≥70% pada modul *ingestion*, *Health Score engine*, dan analytics; *integration test* untuk parser CSV per *issuer*. *Backup*: snapshot harian PostgreSQL dengan retensi 30 hari; **RPO ≤ 24 jam, RTO ≤ 4 jam** untuk fase MVP.
 
@@ -373,7 +373,7 @@ Value proposition ini *mutually reinforcing*: makin banyak UMKM aktif, makin kay
 
 PULSA menggunakan **model freemium B2C + micro B2B**: revenue pengguna akhir (UMKM) + revenue institusional skala mikro (agregator/asosiasi/pemda).
 
-**Sumber pendapatan utama** *(pricing divalidasi survei N=6: 66,7% WTP Rp 50–100rb/bln, 0% pilih "hanya gratis")*:
+**Sumber pendapatan utama** *(pricing divalidasi survei N=7: 57,1% WTP Rp 50–100rb/bln, 0% pilih "hanya gratis")*:
 
 1. **Premium individual** (Rp 49rb/bln): export laporan, rekomendasi tanpa batas, peer benchmark sektor, notifikasi insight mingguan.
 2. **Premium bisnis** (Rp 199rb/bln): multi-cabang, multi-user role, *priority support*, akses modul roadmap V2 (analisis konten medsos).
@@ -458,13 +458,13 @@ Bukti kebutuhan PULSA berasal dari tiga lapis: data makro nasional, survei kuant
 
 **Data makro (BI, OJK, Kemenkop UKM)**: Indonesia punya **64,2 juta UMKM** (61,07% PDB). Per April 2026, **45,3 juta merchant terdaftar QRIS** — mayoritas UMKM; transaksi QRIS tumbuh **+108% YoY** (Bank Indonesia, 2026). Hanya **25,5 juta UMKM** *go digital* penuh — gap menerima vs memanfaatkan data. **Literasi keuangan 65,43%, inklusi 75,02%** (OJK SNLIK 2024) — perlu tools sederhana & terjangkau.
 
-**Survei kuantitatif (N=6, indikatif awal — Mei 2026)** lintas F&B, retail, digital di Bandung/Cianjur/Nasional:
+**Survei kuantitatif (N=7, indikatif awal — Mei 2026)** lintas F&B, retail, digital product di Bandung/Cianjur/Bekasi/Nasional:
 - **100% terima QRIS**; **0% memilih "sudah cukup terbantu"** dengan tools analitik saat ini
-- **66,7% mengandalkan ingatan / belum pernah menganalisis** produk terlaris secara serius
-- **83,3% memilih "rekomendasi produk untuk dipromosikan"** sebagai fitur paling dibutuhkan
-- **83,3% bersedia setup via upload Excel/CSV** — validasi strategi *ingestion* PULSA
-- **66,7% WTP Rp 50.000–100.000/bulan**; **0% memilih "hanya jika gratis"** — validasi pricing Premium
-- **100% menuliskan "kenaikan omzet"** sebagai goal 6 bulan ke depan
+- **57,1% mengandalkan ingatan / belum pernah menganalisis** produk terlaris secara serius
+- **85,7% memilih "rekomendasi produk untuk dipromosikan"** sebagai fitur paling dibutuhkan
+- **85,7% bersedia setup via upload Excel/CSV** — validasi strategi *ingestion* PULSA
+- **57,1% WTP Rp 50.000–100.000/bulan**; **0% memilih "hanya jika gratis"** — validasi pricing Premium
+- **Mayoritas menulis "kenaikan omzet"** sebagai goal 6 bulan ke depan
 
 **Wawancara mendalam (pemilik kafe, Mei 2026)**: tools eksisting belum cukup; pengguna menginginkan rekomendasi dalam bahasa natural seperti *"tambah stok ayam bakar tanggal 17–18 karena ada reservasi 30 orang"* (verbatim) — bukan dashboard generik.
 
@@ -509,7 +509,7 @@ Segmentasi awal sengaja dipersempit untuk memvalidasi *product-market fit* denga
 - *Training* via komunitas & asosiasi UMKM untuk mengurangi *cognitive load*.
 - Transparansi data + *opt-in* eksplisit untuk analitik agregat anonim.
 
-**Validasi awal survei (N=6, Mei 2026)**: 83,3% bersedia setup via *upload* Excel/CSV — selaras dengan jalur *ingestion* MVP; 33,3% hanya punya <5 menit/hari untuk pencatatan, memperkuat keharusan UI *low-friction*. *Adoption pathway* PULSA realistis.
+**Validasi awal survei (N=7, Mei 2026)**: 85,7% bersedia setup via *upload* Excel/CSV — selaras dengan jalur *ingestion* MVP; 28,6% hanya punya <5 menit/hari untuk pencatatan, memperkuat keharusan UI *low-friction*. *Adoption pathway* PULSA realistis.
 
 ---
 
@@ -517,7 +517,7 @@ Segmentasi awal sengaja dipersempit untuk memvalidasi *product-market fit* denga
 
 ### Progress Since the 1st Submission *(maks. 150 kata)*
 
-Sejak submission pertama, PULSA mengalami perkembangan konkret pada enam dimensi:
+Sejak submission pertama, PULSA mengalami perkembangan konkret pada empat aspek utama:
 
 1. **Prototype interaktif**: web 7 modul (login, dashboard, transaksi, analytics, health score, rekomendasi, ingestion) live di *https://handokobeni.github.io/pulsa-demo/*.
 
@@ -525,11 +525,9 @@ Sejak submission pertama, PULSA mengalami perkembangan konkret pada enam dimensi
 
 3. **Target dampak realistis**: berbasis kapasitas tim 2 *founders* — 150 UMKM tahun 1 → 7.500 tahun 3, dengan 16 KPI kuantitatif dalam 4 kategori.
 
-4. **Arsitektur teknis**: desain modular 8 komponen dengan diagram alur dan *tech stack* spesifik.
+4. **Validasi pasar awal**: survei putaran 1 selesai (N=7) — 100% terima QRIS, 57,1% WTP Rp 50–100rb/bulan, 85,7% memilih *upload* file; melengkapi 1 wawancara mendalam pemilik kafe.
 
-5. **Identifikasi mitra konkret**: Midtrans, Xendit, asosiasi kuliner, supplier B2B UMKM, dan vendor POS lokal sebagai mitra distribusi & ekosistem.
-
-6. **Validasi pasar awal**: survei putaran 1 selesai (N=6) — 100% terima QRIS, 66,7% WTP Rp 50–100rb/bulan, 83,3% memilih *upload* file; melengkapi 1 wawancara mendalam pemilik kafe.
+Penyempurnaan teknis (arsitektur modular 8 komponen) dan identifikasi mitra (Midtrans, Xendit, asosiasi kuliner, supplier B2B, vendor POS lokal) menyertai keempat capaian utama tersebut.
 
 ### Current Status *(maks. 50 kata)*
 
@@ -546,15 +544,14 @@ Lampiran yang menyertai proposal ini:
    - `02_dashboard.png` — Dashboard dengan KPI, tren revenue, donut channel, produk terlaris, rekomendasi AI
    - `03_transactions.png` — Tabel transaksi multi-channel dengan filter & pagination
    - `04_analytics.png` — Peak hours heatmap, performa produk, revenue per channel
-   - `05_health_score.png` — Ring score 78.5 (B+) + breakdown 5 komponen
+   - `05_health_score.png` — Ring score + breakdown 5 komponen (Revenue Stability, Tx Frequency, Customer Diversity, Channel Diversity, Growth Trend) + tombol Bagikan Skor
    - `06_recommendations.png` — Daftar rekomendasi AI terklasifikasi prioritas
    - `07_ingestion.png` — Upload file CSV/XLSX, input manual, riwayat import
 4. **Diagram sistem**:
    - `architecture_diagram.png` / `.svg` — arsitektur teknis (Section 5)
    - `data_flow_diagram.png` / `.svg` — alur data input → processing → analytics → output (Section 3)
-5. **Demo video** — `pulsa_demo.mp4` (1-2 menit walkthrough fitur utama) *(akan dilampirkan)*
-6. **Survei validasi pasar (kuantitatif, putaran 1 selesai N=6)** — ringkasan struktur di `attachments/survey_summary.md`; instrumen survei: [Google Form Survei Kebutuhan UMKM](https://docs.google.com/forms/d/e/1FAIpQLSc7b2UDNqrd__QBGXGd0m390mDZvJ2xflkKPA90D2fObBhPcQ/viewform); putaran 2 menuju N ≥ 30 sedang berjalan.
-7. **Dokumen referensi**:
+5. **Survei validasi pasar (kuantitatif, putaran 1 selesai N=7)** — ringkasan struktur di `attachments/survey_summary.md`; instrumen survei: [Google Form Survei Kebutuhan UMKM](https://docs.google.com/forms/d/e/1FAIpQLSc7b2UDNqrd__QBGXGd0m390mDZvJ2xflkKPA90D2fObBhPcQ/viewform); putaran 2 menuju N ≥ 30 sedang berjalan.
+6. **Dokumen referensi**:
    - Spesifikasi metodologi Business Health Score (komponen, bobot, formula)
    - Data sumber dukungan (BI, OJK, Kemenkop UKM) — referensi di bawah
 
