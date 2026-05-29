@@ -12,7 +12,7 @@
 404 Inovators
 
 ### Proposal Title
-PULSA — Payment Understanding & Ledger for Smart Analytics: Platform Business Intelligence Operasional untuk UMKM Mikro & Kecil Indonesia
+PULSA: AI Financial Intelligence untuk UMKM Berbasis Data Transaksi
 
 ### Team Composition *(maks. 120 kata)*
 
@@ -32,10 +32,10 @@ PULSA (*Payment Understanding & Ledger for Smart Analytics*) menjawab kesenjanga
 ## 2. PROBLEM ALIGNMENT & REFINEMENT
 
 ### Problem Statement
-**Peningkatan Produktivitas, Ketahanan Pangan, dan Penciptaan Lapangan Kerja → Inklusi Ekonomi (UMKM)**
+**Peningkatan Produktivitas, Ketahanan Pangan, dan Penciptaan Lapangan Kerja**
 
 ### Primary Sub-Problem Statement
-**Penguatan Produktivitas & Daya Saing UMKM Mikro melalui Demokratisasi Business Intelligence**
+**Inklusi Ekonomi (UMKM)**
 
 ### Problem Validation *(maks. 180 kata)*
 
