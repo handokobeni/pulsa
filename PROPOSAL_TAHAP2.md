@@ -35,11 +35,11 @@ Banyak UMKM kuliner, retail, dan jasa kini menerima pembayaran digital lewat QRI
 **Peningkatan Produktivitas, Ketahanan Pangan, dan Penciptaan Lapangan Kerja**
 
 ### Primary Sub-Problem Statement
-**Inklusi Ekonomi (UMKM)**
+**Inklusi Ekonomi (UMKM)** — *Pemanfaatan Data Alternatif / Credit Scoring*
 
 ### Problem Validation *(maks. 180 kata)*
 
-Masalah inti yang ingin diselesaikan adalah kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi untuk analisis bisnis yang memperkuat inklusi ekonomi UMKM. Setelah adopsi QRIS naik tajam, banyak UMKM kuliner, retail, dan jasa menerima pembayaran digital setiap hari, namun data tersebut hanya berhenti sebagai rekap transaksi.
+Masalah inti yang ingin diselesaikan adalah kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi sebagai sumber data alternatif untuk analisis bisnis dan penguatan inklusi ekonomi UMKM. Setelah adopsi QRIS naik tajam, banyak UMKM kuliner, retail, dan jasa menerima pembayaran digital setiap hari, namun data tersebut hanya berhenti sebagai rekap transaksi.
 
 Penyebabnya bertumpuk. Data tersebar di banyak kanal (QRIS, marketplace, transfer bank, input manual) tanpa pernah disatukan. Aplikasi pembayaran cuma memberi ringkasan seadanya. Alat analitik kelas enterprise terlalu mahal sekaligus rumit untuk usaha mikro. Dan belum ada yang menerjemahkan pola transaksi ke bahasa keputusan sehari-hari.
 
@@ -150,6 +150,8 @@ Manfaat PULSA tidak berhenti di satu UMKM. Ketika dipakai banyak usaha, dampakny
 **Demokratisasi business intelligence**: Tools analitik yang sebelumnya hanya terjangkau enterprise (BI/Looker/Power BI berbiaya jutaan rupiah/bulan) menjadi tersedia untuk UMKM mikro dengan harga di bawah Rp 100rb/bulan. Ini menutup ketimpangan akses tools antara pelaku usaha besar dan mikro.
 
 **Kualitas data ekosistem**: Dengan ribuan UMKM yang mendisiplinkan pencatatan, kualitas data agregat di sektor UMKM membaik. Mendukung pemetaan ekonomi mikro untuk perumusan kebijakan publik (pemerintah daerah, BI, Kemenkop UKM).
+
+**Inklusi pembiayaan (roadmap)**: profil usaha berbasis data alternatif dari PULSA ke depan dapat menjadi sinyal *credit-readiness* saat UMKM mengakses pembiayaan formal, lewat kemitraan dengan lembaga keuangan.
 
 **Penguatan literasi data**: Bahasa sederhana — "produk terlaris", "jam tersibuk", "kesehatan operasional" — membuat UMKM terbiasa mengambil keputusan berbasis data. Transformasi perilaku jangka panjang ini bernilai akumulatif.
 
@@ -561,7 +563,7 @@ Lampiran yang menyertai proposal ini:
 
 1. **Bank Indonesia** — Statistik QRIS 2026: 45,3 juta merchant terdaftar per April 2026 (target BI "17-8-45": 17 miliar transaksi, 8 negara cross-border, 45 juta merchant); transaksi QRIS tumbuh +108,43% YoY pada April 2026; mayoritas merchant adalah UMKM. Sumber: situs resmi Bank Indonesia (bi.go.id), pemberitaan Infobanknews/Voi.id Q1–Q2 2026, statistik ASPI Indonesia (aspi-indonesia.or.id/statistik-qris/).
 2. **OJK** — Survei Nasional Literasi dan Inklusi Keuangan (SNLIK) 2024: indeks literasi 65,43%, indeks inklusi 75,02%.
-3. **OJK** — Roadmap Pengembangan UMKM & Roadmap Perusahaan Pembiayaan 2024–2028; *credit gap* UMKM per 2023 ±Rp 2.400 triliun (per EY Indonesia × OJK, kebutuhan Rp 4.300T vs realisasi Rp 1.900T). *Konteks ekosistem makro, bukan target langsung PULSA*.
+3. **OJK** — Roadmap Pengembangan UMKM & Roadmap Perusahaan Pembiayaan 2024–2028; *credit gap* UMKM per 2023 ±Rp 2.400 triliun (per EY Indonesia × OJK, kebutuhan Rp 4.300T vs realisasi Rp 1.900T). *Konteks ekosistem makro; PULSA berperan di sisi pemanfaatan data alternatif, bukan penyaluran kredit*.
 4. **Kementerian Koperasi & UKM** — Statistik UMKM Indonesia: 64,2 juta UMKM, kontribusi 61,07% PDB, 25,5 juta UMKM "go digital" (2025).
 5. **International Finance Corporation (IFC)** — MSME Finance Gap Report 2024: US$234 miliar.
 6. **Bank Indonesia** — Blueprint Sistem Pembayaran Indonesia 2025.

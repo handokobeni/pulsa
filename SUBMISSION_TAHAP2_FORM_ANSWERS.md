@@ -77,9 +77,9 @@ Peningkatan Produktivitas, Ketahanan Pangan, dan Penciptaan Lapangan Kerja
 
 **Jawaban:**
 ```
-Inklusi Ekonomi (UMKM)
+Inklusi Ekonomi (UMKM) — Pemanfaatan Data Alternatif / Credit Scoring
 ```
-> (Sudah diperbaiki agar match daftar resmi panduan & selaras dengan solusi — sebelumnya "Credit Scoring".)
+> (Tema spesifik resmi di bawah "Inklusi Ekonomi (UMKM)" per website PIDI. PULSA memanfaatkan data alternatif transaksi sebagai inti; credit-readiness diposisikan sebagai roadmap, bukan klaim sekarang.)
 
 ---
 
@@ -88,7 +88,7 @@ Inklusi Ekonomi (UMKM)
 
 **Jawaban:**
 ```
-Masalah inti yang ingin diselesaikan adalah kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi untuk analisis bisnis yang memperkuat inklusi ekonomi UMKM. Setelah adopsi QRIS naik tajam, banyak UMKM kuliner, retail, dan jasa menerima pembayaran digital setiap hari, namun data tersebut hanya berhenti sebagai rekap transaksi.
+Masalah inti yang ingin diselesaikan adalah kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi sebagai sumber data alternatif untuk analisis bisnis dan penguatan inklusi ekonomi UMKM. Setelah adopsi QRIS naik tajam, banyak UMKM kuliner, retail, dan jasa menerima pembayaran digital setiap hari, namun data tersebut hanya berhenti sebagai rekap transaksi.
 
 Penyebabnya bertumpuk. Data tersebar di banyak kanal (QRIS, marketplace, transfer bank, input manual) tanpa pernah disatukan. Aplikasi pembayaran cuma memberi ringkasan seadanya. Alat analitik kelas enterprise terlalu mahal sekaligus rumit untuk usaha mikro. Dan belum ada yang menerjemahkan pola transaksi ke bahasa keputusan sehari-hari.
 
@@ -231,6 +231,8 @@ Manfaat PULSA tidak berhenti di satu UMKM. Ketika dipakai banyak usaha, dampakny
 Demokratisasi business intelligence: Tools analitik yang sebelumnya hanya terjangkau enterprise (BI/Looker/Power BI berbiaya jutaan rupiah/bulan) menjadi tersedia untuk UMKM mikro dengan harga di bawah Rp 100rb/bulan. Ini menutup ketimpangan akses tools antara pelaku usaha besar dan mikro.
 
 Kualitas data ekosistem: Dengan ribuan UMKM yang mendisiplinkan pencatatan, kualitas data agregat di sektor UMKM membaik. Mendukung pemetaan ekonomi mikro untuk perumusan kebijakan publik (pemerintah daerah, BI, Kemenkop UKM).
+
+Inklusi pembiayaan (roadmap): profil usaha berbasis data alternatif dari PULSA ke depan dapat menjadi sinyal credit-readiness saat UMKM mengakses pembiayaan formal, lewat kemitraan dengan lembaga keuangan.
 
 Penguatan literasi data: Bahasa sederhana — "produk terlaris", "jam tersibuk", "kesehatan operasional" — membuat UMKM terbiasa mengambil keputusan berbasis data. Transformasi perilaku jangka panjang ini bernilai akumulatif.
 
