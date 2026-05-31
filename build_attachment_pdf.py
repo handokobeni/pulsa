@@ -8,7 +8,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ATTACH = Path(__file__).parent / "attachments"
-OUTPUT = ATTACH / "PULSA_Prototype_Lampiran.pdf"
+OUTPUT = ATTACH / "P0670 - PULSA: AI Financial Intelligence untuk UMKM Berbasis Data Transaksi.pdf"
 
 # A4 landscape at 200 DPI = 2339 × 1654 px
 PAGE_W, PAGE_H = 2339, 1654
