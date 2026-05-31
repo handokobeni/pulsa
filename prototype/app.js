@@ -1338,6 +1338,12 @@ const APP = {
 
   applyUrlParams() {
     const params = new URLSearchParams(window.location.search);
+    if (params.get('capture') === '1') {
+      // Disable transitions/animations for clean screenshots
+      const style = document.createElement('style');
+      style.textContent = '*, *::before, *::after { animation: none !important; transition: none !important; }';
+      document.head.appendChild(style);
+    }
     if (params.get('demo') === '1') {
       // Set a demo goal for richer dashboard
       this.setGoal(15, 'Nasi Bakar Ayam', 30);
