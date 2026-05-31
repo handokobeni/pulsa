@@ -6,7 +6,7 @@
 ## 1. TEAM IDENTITY
 
 ### Team ID
-*[Diisi sesuai Team ID resmi dari panitia tahap 1]*
+P0670
 
 ### Team Name
 404 Inovators
@@ -25,7 +25,7 @@ Tim **404 Inovators** adalah tim *engineering* kecil dengan latar belakang *soft
 
 ### Executive Summary *(maks. 150 kata)*
 
-PULSA (*Payment Understanding & Ledger for Smart Analytics*) menjawab kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi oleh UMKM. Target pengguna utama adalah UMKM kuliner, retail, dan jasa yang sudah menerima pembayaran digital (QRIS, marketplace, transfer) tetapi tidak memiliki alat analitik bisnis yang sederhana. Solusi inti kami mengonsolidasi transaksi multi-channel menjadi satu ledger usaha, menghasilkan insight bisnis harian, **Business Health Score**, dan rekomendasi berbasis AI yang dapat langsung ditindaklanjuti. Sejak submission pertama, kami menajamkan empat hal: (1) prototype web interaktif 7 modul yang diakses publik, (2) metodologi Business Health Score dengan 5 komponen terdefinisi, (3) target dampak realistis berbasis kapasitas tim & ritme adopsi UMKM (150 UMKM tahun pertama → 7.500 dalam tiga tahun), dan (4) validasi pasar awal melalui survei kuantitatif (N=7 — sinyal WTP positif). Dampak yang ditargetkan: peningkatan produktivitas operasional UMKM, demokratisasi *business intelligence* yang sebelumnya hanya enterprise, dan penguatan daya saing UMKM mikro (61% PDB).
+Banyak UMKM kuliner, retail, dan jasa kini menerima pembayaran digital lewat QRIS, marketplace, dan transfer. Masalahnya, data itu berhenti sebagai rekap pembayaran; mereka belum punya alat sederhana untuk membacanya menjadi keputusan bisnis. PULSA (*Payment Understanding & Ledger for Smart Analytics*) menutup celah itu. Kami menyatukan transaksi lintas kanal ke satu ledger usaha, lalu menyajikan insight harian, **Business Health Score**, dan rekomendasi yang bisa langsung dijalankan pemilik usaha. Sejak submission pertama, kami menajamkan empat hal: prototype web 7 modul yang sudah bisa diakses publik; metodologi Business Health Score dengan 5 komponen yang terdefinisi jelas; target dampak yang realistis untuk tim dua orang (150 UMKM di tahun pertama, 7.500 di tahun ketiga); dan validasi pasar awal lewat survei kuantitatif (N=7, sinyal WTP positif). Tujuan akhirnya sederhana: UMKM lebih produktif, dan analitik bisnis yang dulu hanya milik perusahaan besar kini terjangkau bagi usaha mikro penyumbang 61% PDB.
 
 ---
 
@@ -35,15 +35,15 @@ PULSA (*Payment Understanding & Ledger for Smart Analytics*) menjawab kesenjanga
 **Peningkatan Produktivitas, Ketahanan Pangan, dan Penciptaan Lapangan Kerja**
 
 ### Primary Sub-Problem Statement
-**Pemanfaatan Data Alternatif / Credit Scoring**
+**Inklusi Ekonomi (UMKM)** — *Pemanfaatan Data Alternatif / Credit Scoring*
 
 ### Problem Validation *(maks. 180 kata)*
 
-Masalah inti yang ingin diselesaikan adalah kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi untuk analisis bisnis dan penilaian kapasitas usaha UMKM. Setelah adopsi QRIS naik tajam, banyak UMKM kuliner, retail, dan jasa menerima pembayaran digital setiap hari, namun data tersebut hanya berhenti sebagai rekap transaksi.
+Masalah inti yang ingin diselesaikan adalah kesenjangan antara digitalisasi pembayaran yang sudah masif dengan rendahnya pemanfaatan data transaksi sebagai sumber data alternatif untuk analisis bisnis dan penguatan inklusi ekonomi UMKM. Setelah adopsi QRIS naik tajam, banyak UMKM kuliner, retail, dan jasa menerima pembayaran digital setiap hari, namun data tersebut hanya berhenti sebagai rekap transaksi.
 
-Akar masalahnya berlapis: (1) data tersebar di banyak kanal — QRIS, marketplace, transfer bank, dan input manual — tanpa konsolidasi; (2) aplikasi pembayaran hanya memberi ringkasan dasar; (3) alat analitik kelas enterprise terlalu mahal dan kompleks untuk pelaku usaha mikro; (4) belum ada bahasa sederhana yang menerjemahkan pola transaksi menjadi keputusan bisnis sehari-hari.
+Penyebabnya bertumpuk. Data tersebar di banyak kanal (QRIS, marketplace, transfer bank, input manual) tanpa pernah disatukan. Aplikasi pembayaran cuma memberi ringkasan seadanya. Alat analitik kelas enterprise terlalu mahal sekaligus rumit untuk usaha mikro. Dan belum ada yang menerjemahkan pola transaksi ke bahasa keputusan sehari-hari.
 
-Dampaknya, mayoritas UMKM mengambil keputusan operasional — stok, jam buka, promo, alokasi marketing — berdasarkan intuisi, bukan data. Ketimpangan ini diperparah oleh **akses terbatas ke tools business intelligence**: solusi enterprise berbiaya jutaan rupiah per bulan, sementara aplikasi pencatatan dasar tidak menawarkan analitik mendalam. UMKM kehilangan revenue dari peluang yang tidak teridentifikasi dan tertinggal dalam efisiensi operasional dibanding pelaku usaha yang lebih besar.
+Akibatnya, sebagian besar UMKM memutuskan stok, jam buka, promo, dan alokasi marketing berdasarkan intuisi, bukan data. Keadaan ini makin berat karena tools business intelligence yang ada sulit dijangkau: solusi kelas enterprise berbiaya jutaan rupiah per bulan, sementara aplikasi pencatatan dasar tidak menawarkan analitik yang mendalam. Pada akhirnya UMKM kehilangan peluang yang tidak pernah mereka sadari, dan makin tertinggal secara efisiensi dari pelaku usaha yang lebih besar.
 
 ### Problem–Solution Mapping *(maks. 180 kata)*
 
@@ -108,7 +108,7 @@ PULSA menargetkan dampak pada tiga lapisan: pengguna langsung, ekosistem keuanga
 - Peningkatan literasi data UMKM secara progresif.
 - Penguatan disiplin pencatatan transaksi sebagai fondasi pertumbuhan & daya saing jangka panjang.
 
-**Counterfactual scenario**: Tanpa PULSA, UMKM rata-rata menghabiskan **2–3 jam/minggu** untuk rekapitulasi manual dan tetap kehilangan **5–10% revenue** dari peluang tak teridentifikasi (peak hours, produk terlaris). Dengan PULSA: rekapitulasi otomatis ≤15 menit/minggu + rekomendasi spesifik → uplift target **10–15% dalam 6 bulan** (lihat *Impact Measurement*).
+**Skenario asumtif**: Tanpa PULSA, UMKM rata-rata menghabiskan **2–3 jam/minggu** untuk rekapitulasi manual dan tetap kehilangan **5–10% revenue** dari peluang tak teridentifikasi (peak hours, produk terlaris). Dengan PULSA: rekapitulasi otomatis ≤15 menit/minggu + rekomendasi spesifik → uplift target **10–15% dalam 6 bulan** (lihat *Impact Measurement*).
 
 **Skala data yang diproses:**
 - Tahun 1: ±450 ribu transaksi/bulan (100 transaksi/hari × 150 UMKM × 30 hari).
@@ -145,11 +145,13 @@ Pengukuran dilakukan melalui *in-app analytics*, *survey* pengguna kuartalan, wa
 
 ### System & Public Value Proposition *(maks. 200 kata)*
 
-Nilai sistemik PULSA tidak berhenti pada efisiensi operasional satu UMKM, tetapi merambat ke sistem yang lebih luas.
+Manfaat PULSA tidak berhenti di satu UMKM. Ketika dipakai banyak usaha, dampaknya menjalar ke sistem yang lebih luas.
 
 **Demokratisasi business intelligence**: Tools analitik yang sebelumnya hanya terjangkau enterprise (BI/Looker/Power BI berbiaya jutaan rupiah/bulan) menjadi tersedia untuk UMKM mikro dengan harga di bawah Rp 100rb/bulan. Ini menutup ketimpangan akses tools antara pelaku usaha besar dan mikro.
 
 **Kualitas data ekosistem**: Dengan ribuan UMKM yang mendisiplinkan pencatatan, kualitas data agregat di sektor UMKM membaik. Mendukung pemetaan ekonomi mikro untuk perumusan kebijakan publik (pemerintah daerah, BI, Kemenkop UKM).
+
+**Inklusi pembiayaan (roadmap)**: profil usaha berbasis data alternatif dari PULSA ke depan dapat menjadi sinyal *credit-readiness* saat UMKM mengakses pembiayaan formal, lewat kemitraan dengan lembaga keuangan.
 
 **Penguatan literasi data**: Bahasa sederhana — "produk terlaris", "jam tersibuk", "kesehatan operasional" — membuat UMKM terbiasa mengambil keputusan berbasis data. Transformasi perilaku jangka panjang ini bernilai akumulatif.
 
@@ -174,7 +176,7 @@ Pendekatan yang sudah ada di Indonesia terbagi tiga kategori, masing-masing memi
 **Pembeda PULSA:**
 
 1. **Konsolidasi multi-channel sebagai default** — QRIS, POS, marketplace, transfer, manual semuanya masuk satu ledger. Belum ada solusi UMKM Indonesia yang menjadikan ini fitur inti.
-2. **Business Health Score 5 komponen** — bahasa universal untuk kesehatan usaha berbasis data transaksi nyata, dengan metodologi terstruktur. Tidak ditemukan di solusi lain.
+2. **Business Health Score 5 komponen** — bahasa universal untuk kesehatan usaha berbasis data transaksi nyata, dengan metodologi terstruktur. Skor merchant memang dipakai sebagian pemain *lending*, tetapi belum dikemas sebagai metrik kesehatan tunggal yang dirancang khusus untuk operasional UMKM mikro.
 3. **Fokus eksklusif segmen UMKM mikro & kecil** — dirancang khusus untuk usaha dengan omzet Rp 5–100 juta/bulan, bukan adaptasi enterprise tools; UX, harga, dan feature set match dengan kebutuhan riil segmen ini.
 4. **Bahasa UMKM-native** — rekomendasi konkret seperti "Tambah stok ayam bakar 20% di Jumat", bukan dashboard generik yang harus diinterpretasi sendiri.
 5. **Lightweight & terjangkau** — model *freemium*, akses via PWA tanpa instalasi native, biaya operasional rendah untuk pengguna.
@@ -367,7 +369,7 @@ PULSA menyajikan nilai berbeda untuk dua tipe stakeholder utama.
 - *Distribusi value-add*: dapat menawarkan PULSA sebagai fitur tambahan ke merchant tanpa membangun analytics sendiri.
 - *Insight agregat sektoral*: data agregat anonim untuk pemetaan ekonomi mikro daerah — input kebijakan & program intervensi.
 
-Value proposition ini *mutually reinforcing*: makin banyak UMKM aktif, makin kaya insight agregat yang dapat ditawarkan ke mitra institusional — dan sebaliknya, distribusi via mitra mempercepat adopsi UMKM.
+Kedua sisi ini saling mendorong. Makin banyak UMKM yang aktif, makin kaya insight agregat yang bisa kami tawarkan ke mitra institusional. Sebaliknya, distribusi lewat mitra mempercepat UMKM baru bergabung.
 
 ### Model Revenue / Funding *(maks. 200 kata)*
 
@@ -439,7 +441,7 @@ PULSA dirancang dengan **strategi distribusi berbasis mitra** untuk mempercepat 
 
 **Mitra regulator & ekosistem:**
 - *Bank Indonesia* — selaras dengan Blueprint SPI 2025–2030
-- *OJK* — opsional *regulatory sandbox* (POJK 22/2023) bila ke depan masuk ranah fintech
+- *OJK* — opsional *regulatory sandbox* (POJK 3/2024) bila ke depan masuk ranah fintech
 - *Kemenkop UKM* — program digitalisasi UMKM nasional
 
 Peran mitra dirancang *win-win*: PULSA mendapat distribusi, mitra mendapat *value-add* untuk merchant/anggota.
@@ -450,7 +452,7 @@ Peran mitra dirancang *win-win*: PULSA mendapat distribusi, mitra mendapat *valu
 
 ### Problem–Market Fit *(maks. 120 kata)*
 
-Masalah ini mendesak karena tiga konsekuensi langsung yang dialami UMKM. Pertama, **keputusan bisnis suboptimal**: tanpa pemahaman pola transaksi, UMKM kehilangan revenue 5–10% dari peluang yang tidak teridentifikasi (jam tersibuk, produk terlaris, alokasi promo). Kedua, **kesenjangan akses tools BI**: solusi analitik kelas enterprise berbiaya jutaan rupiah per bulan — di luar jangkauan UMKM mikro dengan omzet Rp 5–50 juta/bulan. Ketiga, **kerentanan operasional**: UMKM yang tidak mengenali pola bisnisnya lebih rentan terhadap perubahan musiman dan guncangan ekonomi. Bagi UMKM, ini bukan masalah teoretis tetapi *opportunity cost* nyata yang berulang setiap minggu — kehilangan revenue, kehilangan efisiensi, dan kehilangan daya saing dibanding pelaku usaha yang lebih besar.
+Masalah ini mendesak karena tiga konsekuensi langsung yang dialami UMKM. Pertama, **keputusan bisnis suboptimal**: tanpa pemahaman pola transaksi, UMKM diperkirakan kehilangan revenue 5–10% dari peluang yang tidak teridentifikasi (jam tersibuk, produk terlaris, alokasi promo). Kedua, **kesenjangan akses tools BI**: solusi analitik kelas enterprise berbiaya jutaan rupiah per bulan — di luar jangkauan UMKM mikro dengan omzet Rp 5–50 juta/bulan. Ketiga, **kerentanan operasional**: UMKM yang tidak mengenali pola bisnisnya lebih rentan terhadap perubahan musiman dan guncangan ekonomi. Bagi UMKM ini bukan masalah teoretis. Setiap minggu ada ongkos nyata yang terus berulang: revenue yang bocor, waktu yang terbuang, dan posisi yang makin tertinggal dari pesaing yang lebih besar.
 
 ### Evidence of Demand *(maks. 220 kata)*
 
@@ -561,7 +563,7 @@ Lampiran yang menyertai proposal ini:
 
 1. **Bank Indonesia** — Statistik QRIS 2026: 45,3 juta merchant terdaftar per April 2026 (target BI "17-8-45": 17 miliar transaksi, 8 negara cross-border, 45 juta merchant); transaksi QRIS tumbuh +108,43% YoY pada April 2026; mayoritas merchant adalah UMKM. Sumber: situs resmi Bank Indonesia (bi.go.id), pemberitaan Infobanknews/Voi.id Q1–Q2 2026, statistik ASPI Indonesia (aspi-indonesia.or.id/statistik-qris/).
 2. **OJK** — Survei Nasional Literasi dan Inklusi Keuangan (SNLIK) 2024: indeks literasi 65,43%, indeks inklusi 75,02%.
-3. **OJK** — Roadmap Pengembangan UMKM & Roadmap Perusahaan Pembiayaan 2024–2028; *credit gap* UMKM per 2023 ±Rp 2.400 triliun (per EY Indonesia × OJK, kebutuhan Rp 4.300T vs realisasi Rp 1.900T). *Konteks ekosistem makro, bukan target langsung PULSA*.
+3. **OJK** — Roadmap Pengembangan UMKM & Roadmap Perusahaan Pembiayaan 2024–2028; *credit gap* UMKM per 2023 ±Rp 2.400 triliun (per EY Indonesia × OJK, kebutuhan Rp 4.300T vs realisasi Rp 1.900T). *Konteks ekosistem makro; PULSA berperan di sisi pemanfaatan data alternatif, bukan penyaluran kredit*.
 4. **Kementerian Koperasi & UKM** — Statistik UMKM Indonesia: 64,2 juta UMKM, kontribusi 61,07% PDB, 25,5 juta UMKM "go digital" (2025).
 5. **International Finance Corporation (IFC)** — MSME Finance Gap Report 2024: US$234 miliar.
 6. **Bank Indonesia** — Blueprint Sistem Pembayaran Indonesia 2025.
