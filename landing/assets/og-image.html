@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>OG render — Stax</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: "Inter", system-ui, sans-serif;
+    background: #0B0E1A;
+    color: #F8F8F2;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: stretch;
+    isolation: isolate;
+  }
+  .ambient {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 90% 70% at 30% 50%, #000 30%, transparent 80%);
+            mask-image: radial-gradient(ellipse 90% 70% at 30% 50%, #000 30%, transparent 80%);
+  }
+  .glow {
+    position: absolute;
+    width: 900px; height: 900px;
+    right: -160px; top: -180px;
+    background: radial-gradient(closest-side, rgba(245,158,11,0.45), transparent 70%);
+    filter: blur(20px);
+    opacity: 0.85;
+  }
+
+  /* LEFT — brand + tagline */
+  .left {
+    position: relative;
+    z-index: 1;
+    padding: 60px 0 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    color: #F8F8F2;
+  }
+  .brand svg { width: 30px; height: 30px; color: #F59E0B; }
+
+  .tagline {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    color: #F8F8F2;
+    margin-bottom: 32px;
+  }
+  .tagline em {
+    font-style: normal;
+    color: #F59E0B;
+    position: relative;
+    display: inline-block;
+  }
+  .tagline em::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0.08em;
+    height: 0.18em;
+    background: linear-gradient(90deg, #F59E0B, #FACC15);
+    opacity: 0.25;
+    border-radius: 6px;
+    z-index: -1;
+  }
+
+  .sub {
+    font-size: 22px;
+    color: #B7BCD0;
+    line-height: 1.4;
+    max-width: 480px;
+  }
+  .sub strong { color: #F8F8F2; font-weight: 600; }
+
+  .meta {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8B92AB;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .meta::before {
+    content: "";
+    width: 8px; height: 8px;
+    background: #F59E0B;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(245,158,11,0.18);
+  }
+
+  /* RIGHT — Stax card mockup */
+  .right {
+    position: relative;
+    z-index: 1;
+    padding: 60px 70px 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stax-card {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 30px 28px;
+    background: linear-gradient(180deg, #1F2233 0%, #15182A 100%);
+    border: 1px solid rgba(245, 158, 11, 0.28);
+    border-radius: 22px;
+    box-shadow:
+      0 40px 80px -20px rgba(0,0,0,0.55),
+      0 0 0 1px rgba(255,255,255,.04) inset,
+      0 -40px 100px -40px rgba(245,158,11,0.55);
+    display: grid;
+    gap: 22px;
+    transform: rotate(-1deg);
+  }
+  /* faint stacked layers behind, embodies the "tumpuk" signature */
+  .stax-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #15182A;
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: inherit;
+    transform: translate(14px, 16px) rotate(3deg);
+    opacity: .35;
+    z-index: -1;
+  }
+  .stax-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #15182A;
+    border: 1px solid rgba(255,255,255,.04);
+    border-radius: inherit;
+    transform: translate(28px, 32px) rotate(7deg);
+    opacity: .2;
+    z-index: -2;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-brand {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: #F59E0B;
+  }
+  .card-brand svg { width: 20px; height: 20px; }
+  .card-brand strong {
+    color: #F8F8F2;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .card-pill {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 999px;
+    color: #8B92AB;
+  }
+
+  .total .label {
+    display: block;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #8B92AB;
+    margin-bottom: 6px;
+  }
+  .total .value {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    letter-spacing: -0.03em;
+    color: #F8F8F2;
+    line-height: 1;
+  }
+  .total .value .rp { font-size: 22px; color: #8B92AB; margin-right: 4px; font-weight: 600; }
+  .total .value .unit { font-size: 22px; color: #8B92AB; margin-left: 4px; font-weight: 600; }
+  .total .delta { display: block; font-size: 14px; color: #F59E0B; margin-top: 6px; font-weight: 500; }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .chip {
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+  }
+  .chip .label {
+    display: block;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #8B92AB;
+    margin-bottom: 4px;
+  }
+  .chip .val {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #F8F8F2;
+    letter-spacing: -0.02em;
+  }
+  .chip .val em {
+    font-style: normal;
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 8px;
+    font-size: 12px;
+    background: #F59E0B;
+    color: #0B0E1A;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-weight: 700;
+  }
+
+  .rec {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 10px;
+    padding: 13px 14px;
+    background: rgba(245, 158, 11, 0.07);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: 12px;
+  }
+  .rec-dot {
+    width: 8px; height: 8px; background: #F59E0B; border-radius: 50%; margin-top: 6px;
+  }
+  .rec p {
+    font-size: 13.5px;
+    line-height: 1.45;
+    color: rgba(248,248,242,0.85);
+  }
+  .rec p strong { color: #F59E0B; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="ambient">
+    <div class="grid"></div>
+    <div class="glow"></div>
+  </div>
+
+  <section class="left">
+    <div class="brand">
+      <svg viewBox="0 0 24 24"><rect x="3" y="5"  width="18" height="3" rx="1.2" fill="currentColor" opacity=".35"/><rect x="3" y="10" width="18" height="3" rx="1.2" fill="currentColor" opacity=".65"/><rect x="3" y="15" width="18" height="3" rx="1.2" fill="currentColor"/></svg>
+      <span>Stax</span>
+    </div>
+
+    <div>
+      <h1 class="tagline">Tumpuk data,<br><em>tumpuk cuan.</em></h1>
+      <p class="sub">
+        <strong>AI Financial Intelligence</strong> untuk UMKM Indonesia. Baca pola transaksi multi-channel, dapat rekomendasi mingguan yang bisa langsung dipakai.
+      </p>
+    </div>
+
+    <p class="meta">404 Inovators · Hackathon Digdaya 2026</p>
+  </section>
+
+  <section class="right">
+    <article class="stax-card">
+      <header class="card-head">
+        <span class="card-brand">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5"  width="18" height="3" rx="1.2" fill="currentColor" opacity=".35"/><rect x="3" y="10" width="18" height="3" rx="1.2" fill="currentColor" opacity=".65"/><rect x="3" y="15" width="18" height="3" rx="1.2" fill="currentColor"/></svg>
+          <strong>Stax</strong>
+        </span>
+        <span class="card-pill">30 hari</span>
+      </header>
+
+      <div class="total">
+        <span class="label">Total omzet</span>
+        <span class="value"><span class="rp">Rp</span>43,96<span class="unit">jt</span></span>
+        <span class="delta">↑ 12,4% dari periode sebelumnya</span>
+      </div>
+
+      <div class="row">
+        <div class="chip">
+          <span class="label">Stax Score</span>
+          <span class="val">76<em>B</em></span>
+        </div>
+        <div class="chip">
+          <span class="label">Channel aktif</span>
+          <span class="val">5</span>
+        </div>
+      </div>
+
+      <div class="rec">
+        <span class="rec-dot"></span>
+        <p>Tambah stok <strong>Nasi Bakar Ayam</strong> 20% di Jumat — peak penjualan terdeteksi 4 minggu terakhir.</p>
+      </div>
+    </article>
+  </section>
+</body>
+</html>
