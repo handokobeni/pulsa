@@ -66,11 +66,12 @@
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      const data = new FormData(form);
       const action = form.getAttribute("action") || "";
 
-      // If Formspree endpoint hasn't been configured yet, show success preview locally
-      const isPlaceholder = action.indexOf("REPLACE_WITH_YOUR_ID") !== -1 || !action;
+      // No real backend wired yet — show success state locally so the UX feels complete
+      // for demo / juri review. Plug in a real endpoint (Formspree, Tally, etc.) by
+      // replacing the form's action attribute before going to production.
+      const isStub = !action || action === "#" || action.indexOf("REPLACE_WITH_YOUR_ID") !== -1;
 
       const showSuccess = function () {
         Array.from(form.elements).forEach(function (el) {
@@ -83,8 +84,7 @@
         }
       };
 
-      if (isPlaceholder) {
-        // Local-only confirmation; user must wire up Formspree before deploying.
+      if (isStub) {
         showSuccess();
         return;
       }
@@ -96,7 +96,7 @@
 
       fetch(action, {
         method: "POST",
-        body: data,
+        body: new FormData(form),
         headers: { "Accept": "application/json" }
       }).then(function (res) {
         if (res.ok) {
