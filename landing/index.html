@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B0E1A">
+
+  <title>Stax — Tumpuk data, tumpuk cuan. AI Financial Intelligence untuk UMKM</title>
+  <meta name="description" content="Stax membaca transaksi multi-channel UMKM Anda lalu memberitahu langkah berikutnya untuk naik omzet. QRIS, marketplace, transfer, manual — semua jadi satu cerita yang bisa dipakai.">
+
+  <meta property="og:title" content="Stax — AI Financial Intelligence untuk UMKM">
+  <meta property="og:description" content="Tumpuk data, tumpuk cuan. Stax mengubah transaksi multi-channel jadi rekomendasi yang bisa langsung dipakai.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ============ HERO (DARK) ============ -->
+  <header class="hero">
+    <div class="hero__ambient" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__glow"></div>
+    </div>
+
+    <nav class="nav">
+      <a href="#" class="brand">
+        <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5"  width="18" height="3" rx="1.2" fill="currentColor" opacity=".35"/>
+          <rect x="3" y="10" width="18" height="3" rx="1.2" fill="currentColor" opacity=".65"/>
+          <rect x="3" y="15" width="18" height="3" rx="1.2" fill="currentColor"/>
+        </svg>
+        <span>Stax</span>
+      </a>
+      <div class="nav__actions">
+        <a href="#waitlist" class="nav__link">Waitlist</a>
+        <a class="btn btn--ghost" href="../prototype/index.html?login=1&section=dashboard&demo=1" target="_blank" rel="noopener">Coba Demo</a>
+      </div>
+    </nav>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Stax · AI Financial Intelligence</p>
+        <h1 class="display">
+          Tumpuk data,
+          <span class="display__accent">tumpuk cuan.</span>
+        </h1>
+        <p class="hero__sub">
+          Stax membaca transaksi multi-channel Anda — QRIS, marketplace, transfer, manual —
+          lalu memberitahu langkah berikutnya untuk naik omzet.
+        </p>
+        <p class="hero__tag">Bukan dashboard. Bukan kasir. Ini intelligence.</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="../prototype/index.html?login=1&section=dashboard&demo=1" target="_blank" rel="noopener">
+            Coba Demo
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#waitlist">Daftar Waitlist</a>
+        </div>
+
+        <ul class="hero__trust">
+          <li>Aman &amp; sesuai UU PDP</li>
+          <li>Tanpa instalasi</li>
+          <li>Data Anda, milik Anda</li>
+        </ul>
+      </div>
+
+      <!-- SIGNATURE: stacked channel cards transitioning into unified Stax dashboard card -->
+      <div class="stax-visual" aria-label="Empat sumber data ditumpuk jadi satu dashboard Stax">
+        <div class="stax-visual__deck">
+          <article class="data-card data-card--manual" data-card="manual">
+            <span class="data-card__channel">Manual / Cash</span>
+            <span class="data-card__amount">Rp 4.120.000</span>
+            <span class="data-card__count">48 transaksi</span>
+          </article>
+          <article class="data-card data-card--transfer" data-card="transfer">
+            <span class="data-card__channel">Transfer Bank</span>
+            <span class="data-card__amount">Rp 5.260.000</span>
+            <span class="data-card__count">39 transaksi</span>
+          </article>
+          <article class="data-card data-card--marketplace" data-card="marketplace">
+            <span class="data-card__channel">Marketplace</span>
+            <span class="data-card__amount">Rp 14.830.000</span>
+            <span class="data-card__count">87 transaksi</span>
+          </article>
+          <article class="data-card data-card--qris" data-card="qris">
+            <span class="data-card__channel">QRIS</span>
+            <span class="data-card__amount">Rp 19.750.000</span>
+            <span class="data-card__count">231 transaksi</span>
+          </article>
+
+          <!-- The unified Stax card emerging on top -->
+          <article class="stax-card" aria-label="Ringkasan Stax">
+            <div class="stax-card__head">
+              <span class="stax-card__brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5"  width="18" height="3" rx="1.2" fill="currentColor" opacity=".35"/>
+                  <rect x="3" y="10" width="18" height="3" rx="1.2" fill="currentColor" opacity=".65"/>
+                  <rect x="3" y="15" width="18" height="3" rx="1.2" fill="currentColor"/>
+                </svg>
+                <strong>Stax</strong>
+              </span>
+              <span class="stax-card__pill">30 hari</span>
+            </div>
+            <div class="stax-card__total">
+              <span class="label">Total omzet</span>
+              <span class="value"><span class="rp">Rp</span>43,96<span class="unit">jt</span></span>
+              <span class="delta">↑ 12,4% dari periode sebelumnya</span>
+            </div>
+            <div class="stax-card__score">
+              <svg viewBox="0 0 72 72" class="ring" aria-hidden="true">
+                <circle cx="36" cy="36" r="30" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="8"/>
+                <circle cx="36" cy="36" r="30" fill="none" stroke="url(#staxArc)" stroke-width="8" stroke-linecap="round" stroke-dasharray="143 188" transform="rotate(-90 36 36)"/>
+                <defs>
+                  <linearGradient id="staxArc" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#F59E0B"/>
+                    <stop offset="100%" stop-color="#FACC15"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div>
+                <span class="label">Stax Score</span>
+                <span class="score-val">76 <em>B</em></span>
+              </div>
+            </div>
+            <div class="stax-card__rec">
+              <span class="rec-icon">●</span>
+              <p>Tambah stok Nasi Bakar Ayam 20% di Jumat — peak penjualan terdeteksi.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PROBLEM HOOK (LIGHT) ============ -->
+  <section class="section problem" aria-labelledby="problem-h">
+    <div class="container">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__dot eyebrow__dot--light"></span>Masalahnya</p>
+      <h2 id="problem-h" class="display display--light">
+        Anda punya data di empat tempat.
+        <span class="display__muted">Tapi data itu tidak pernah ngomong.</span>
+      </h2>
+      <p class="lede">
+        Setiap hari Anda menerima pembayaran dari banyak channel. Setiap channel menyimpan rekap.
+        Tapi tidak ada yang menggabungkan semuanya jadi satu cerita yang bisa Anda baca.
+      </p>
+
+      <ul class="problem__stack" role="list">
+        <li class="problem__card problem__card--qris">
+          <span class="problem__channel">QRIS</span>
+          <span class="problem__hint">Rekap di app QRIS issuer</span>
+        </li>
+        <li class="problem__card problem__card--marketplace">
+          <span class="problem__channel">Marketplace</span>
+          <span class="problem__hint">Export dari Shopee &amp; Tokopedia</span>
+        </li>
+        <li class="problem__card problem__card--transfer">
+          <span class="problem__channel">Transfer Bank</span>
+          <span class="problem__hint">CSV mutasi internet banking</span>
+        </li>
+        <li class="problem__card problem__card--manual">
+          <span class="problem__channel">Manual / Cash</span>
+          <span class="problem__hint">Catatan buku atau Excel</span>
+        </li>
+      </ul>
+
+      <p class="problem__closing">
+        Sampai sekarang, data itu cuma jadi catatan.
+        <strong>Stax membaca pola di dalamnya.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTION 3 PILAR (LIGHT) ============ -->
+  <section class="section pillars" aria-labelledby="pillars-h">
+    <div class="container">
+      <header class="section__head">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__dot eyebrow__dot--light"></span>Cara kerja Stax</p>
+        <h2 id="pillars-h" class="display display--light display--md">
+          Tiga cara Stax menumpuk data jadi cuan.
+        </h2>
+      </header>
+
+      <ol class="pillars__grid" role="list">
+
+        <li class="pillar">
+          <div class="pillar__stack">
+            <div class="pillar__layer pillar__layer--back"></div>
+            <div class="pillar__layer pillar__layer--mid"></div>
+            <article class="pillar__card">
+              <span class="pillar__index">01</span>
+              <h3>Stax Ledger</h3>
+              <p>
+                Konsolidasi otomatis QRIS, POS, marketplace, transfer, dan input manual ke satu
+                ledger usaha. Upload Excel/CSV — Stax baca semua.
+              </p>
+              <div class="pillar__demo demo-ledger" aria-hidden="true">
+                <span class="chip chip--indigo">QRIS</span>
+                <span class="chip chip--green">Marketplace</span>
+                <span class="chip chip--amber">Transfer</span>
+                <span class="chip chip--violet">Manual</span>
+                <span class="chip chip--rose">POS</span>
+                <span class="chip chip--ledger">→ Stax Ledger</span>
+              </div>
+            </article>
+          </div>
+        </li>
+
+        <li class="pillar">
+          <div class="pillar__stack">
+            <div class="pillar__layer pillar__layer--back"></div>
+            <div class="pillar__layer pillar__layer--mid"></div>
+            <article class="pillar__card pillar__card--score">
+              <span class="pillar__index">02</span>
+              <h3>Stax Score</h3>
+              <p>
+                Skor kesehatan bisnis 0–100 dari 5 komponen: stabilitas omzet, frekuensi transaksi,
+                diversitas pelanggan, diversitas channel, dan tren pertumbuhan.
+              </p>
+              <div class="pillar__demo demo-score" aria-hidden="true">
+                <svg viewBox="0 0 100 100" class="score-ring" aria-hidden="true">
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(15,17,26,.08)" stroke-width="9"/>
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="#F59E0B" stroke-width="9" stroke-linecap="round" stroke-dasharray="200 264" transform="rotate(-90 50 50)"/>
+                </svg>
+                <div class="score-pill">
+                  <strong>76</strong><em>B</em>
+                </div>
+              </div>
+            </article>
+          </div>
+        </li>
+
+        <li class="pillar">
+          <div class="pillar__stack">
+            <div class="pillar__layer pillar__layer--back"></div>
+            <div class="pillar__layer pillar__layer--mid"></div>
+            <article class="pillar__card pillar__card--ai">
+              <span class="pillar__index">03</span>
+              <h3>Stax AI</h3>
+              <p>
+                Rekomendasi mingguan dalam bahasa Indonesia, bukan jargon. Stax kasih tahu langkah
+                konkret, bukan grafik yang harus diinterpretasi sendiri.
+              </p>
+              <div class="pillar__demo demo-ai" aria-hidden="true">
+                <div class="rec-card">
+                  <span class="rec-tag">Target</span>
+                  <p>Dorong Nasi Bakar Ayam <strong>+15 unit</strong> dalam 30 hari.</p>
+                  <small>Saat ini = 19% transaksi · prioritas tinggi</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS (LIGHT) ============ -->
+  <section class="section howto" aria-labelledby="howto-h">
+    <div class="container">
+      <header class="section__head section__head--center">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__dot eyebrow__dot--light"></span>Tanpa ganti POS, tanpa integrasi rumit</p>
+        <h2 id="howto-h" class="display display--light display--md">
+          Tiga langkah saja.
+        </h2>
+      </header>
+
+      <ol class="howto__steps" role="list">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Tumpuk data Anda</h3>
+          <p>
+            Drag-drop Excel/CSV dari export QRIS, marketplace, atau mutasi bank. Atau input
+            manual transaksi tunai. Tidak perlu ganti POS.
+          </p>
+          <div class="step__visual step__visual--upload" aria-hidden="true">
+            <span class="upload-icon">↑</span>
+            <span class="upload-label">qris_april.csv</span>
+            <span class="upload-meta">1.487 baris siap diproses</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Stax baca polanya</h3>
+          <p>
+            Engine kami ekstrak lima komponen kesehatan bisnis dari data Anda. Semua dalam bahasa
+            sehari-hari, bukan accounting jargon.
+          </p>
+          <div class="step__visual step__visual--analyze" aria-hidden="true">
+            <span class="bar"><b style="--w:82%">Stabilitas</b></span>
+            <span class="bar"><b style="--w:88%">Frekuensi</b></span>
+            <span class="bar"><b style="--w:60%">Pelanggan</b></span>
+            <span class="bar"><b style="--w:95%">Channel</b></span>
+            <span class="bar"><b style="--w:68%">Growth</b></span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Dapat rekomendasi yang jelas</h3>
+          <p>
+            Rekomendasi mingguan terprioritasi: stok, jam buka, bundling promo. Tinggal ikuti dan
+            ukur hasilnya minggu depan.
+          </p>
+          <div class="step__visual step__visual--recs" aria-hidden="true">
+            <div class="rec-mini rec-mini--high"><b>Tinggi</b><span>Tambah stok ayam bakar 20% Jumat</span></div>
+            <div class="rec-mini rec-mini--mid"><b>Sedang</b><span>Buka 30 menit lebih awal Sabtu</span></div>
+            <div class="rec-mini rec-mini--low"><b>Rendah</b><span>Bundling minuman saat jam 18:00</span></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL PROOF (CREAM) ============ -->
+  <section class="section proof" aria-labelledby="proof-h">
+    <div class="container">
+      <header class="section__head section__head--center">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__dot eyebrow__dot--light"></span>Validasi pasar awal</p>
+        <h2 id="proof-h" class="display display--light display--md">
+          Sinyal positif dari UMKM yang kami ajak ngobrol.
+        </h2>
+        <p class="lede lede--center">
+          Hasil survei putaran 1 lintas sektor F&amp;B, retail, dan digital product di Bandung,
+          Cianjur, Bekasi, dan nasional (Mei 2026).
+        </p>
+      </header>
+
+      <dl class="proof__stats">
+        <div class="stat">
+          <dt>QRIS adoption</dt>
+          <dd><span class="stat__num">100<small>%</small></span></dd>
+          <p>responden sudah menerima pembayaran QRIS — target market kami match.</p>
+        </div>
+        <div class="stat">
+          <dt>Pilih file upload sebagai onboarding</dt>
+          <dd><span class="stat__num">85,7<small>%</small></span></dd>
+          <p>memvalidasi strategi ingestion via CSV/XLSX di MVP — tidak perlu ganti POS.</p>
+        </div>
+        <div class="stat stat--accent">
+          <dt>Mau bayar nol</dt>
+          <dd><span class="stat__num">0<small>%</small></span></dd>
+          <p>tidak ada yang memilih "hanya jika gratis". Pricing premium Rp 50–100rb realistis.</p>
+        </div>
+      </dl>
+
+      <figure class="quote">
+        <svg class="quote__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M9 12c-3 0-5 2-5 5 0 2 1 3 3 4l-1 2c4-1 7-5 7-9 0-1-2-2-4-2zm14 0c-3 0-5 2-5 5 0 2 1 3 3 4l-1 2c4-1 7-5 7-9 0-1-2-2-4-2z" fill="currentColor"/></svg>
+        <blockquote>
+          <p>
+            Yang jadi masalah bukan analisis manual. Tools yang ada belum cukup membantu. Saya
+            pengen aplikasi yang ngasih business recommendation dari data yang saya punya.
+          </p>
+        </blockquote>
+        <figcaption>
+          <strong>— Pemilik kafe di Bandung</strong>
+          <span>Wawancara mendalam, Mei 2026 · diparafrase, identitas anonim</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ CTA FOOTER (DARK) ============ -->
+  <footer class="footer" id="waitlist">
+    <div class="footer__ambient" aria-hidden="true">
+      <div class="footer__glow"></div>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__cta">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Closed beta</p>
+        <h2 class="display display--md">Siap nambah cuan?</h2>
+        <p class="footer__sub">
+          Stax sedang closed beta. Daftar di waitlist untuk dapat akses lebih awal, atau intip
+          demo langsung tanpa daftar.
+        </p>
+
+        <form
+          class="waitlist"
+          id="waitlistForm"
+          action="#"
+          method="POST"
+          novalidate
+        >
+          <div class="waitlist__row">
+            <label class="field">
+              <span class="field__label">Nama lengkap</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Beni Handoko">
+            </label>
+            <label class="field">
+              <span class="field__label">WhatsApp atau email</span>
+              <input type="text" name="contact" required autocomplete="email" placeholder="0812... atau email@bisnis.id">
+            </label>
+          </div>
+          <label class="field">
+            <span class="field__label">Kategori usaha</span>
+            <select name="category" required>
+              <option value="" disabled selected>Pilih kategori</option>
+              <option>Kuliner / F&amp;B</option>
+              <option>Retail / Toko</option>
+              <option>Jasa</option>
+              <option>Marketplace seller</option>
+              <option>Digital product</option>
+              <option>Lainnya</option>
+            </select>
+          </label>
+          <button class="btn btn--primary btn--full" type="submit">
+            <span>Daftar Waitlist</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="waitlist__privacy">Data Anda hanya untuk update Stax. Tidak dibagikan ke pihak lain.</p>
+          <p class="waitlist__success" role="status" hidden>
+            Terima kasih! Kami catat Anda di waitlist. Update via email/WA saat akses dibuka.
+          </p>
+        </form>
+
+        <div class="footer__or" aria-hidden="true"><span>atau</span></div>
+
+        <a class="btn btn--outline btn--full" href="../prototype/index.html?login=1&section=dashboard&demo=1" target="_blank" rel="noopener">
+          Coba Demo Sekarang
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <hr class="footer__rule">
+
+      <div class="footer__meta">
+        <div class="footer__brand">
+          <a href="#" class="brand brand--dark">
+            <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5"  width="18" height="3" rx="1.2" fill="currentColor" opacity=".35"/>
+              <rect x="3" y="10" width="18" height="3" rx="1.2" fill="currentColor" opacity=".65"/>
+              <rect x="3" y="15" width="18" height="3" rx="1.2" fill="currentColor"/>
+            </svg>
+            <span>Stax</span>
+          </a>
+          <p>Initiative of PULSA project by 404 Inovators · Hackathon Digdaya 2026</p>
+        </div>
+        <ul class="footer__links" role="list">
+          <li><a href="../prototype/index.html?login=1&section=dashboard&demo=1" target="_blank" rel="noopener">Demo</a></li>
+          <li><a href="../PROPOSAL_TAHAP2.md">Proposal Tahap 2</a></li>
+          <li><a href="https://github.com/handokobeni/pulsa" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:handoko.ben@gmail.com">Kontak</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© 2026 404 Inovators · Dibuat di Indonesia untuk UMKM Indonesia.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
