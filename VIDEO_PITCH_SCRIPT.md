@@ -19,7 +19,7 @@
 | **Solusi** *(Apa yang dibangun?)* | PULSA menyatukan transaksi multi-channel ke satu ledger usaha, lalu mengubahnya jadi insight harian, **Business Health Score**, dan rekomendasi yang bisa langsung dijalankan pemilik usaha. |
 | **Demo** *(Fitur / alur yang ditunjukkan)* | Upload file transaksi → dashboard KPI & tren → analytics peak hours & produk terlaris → Business Health Score → daftar rekomendasi AI berprioritas. |
 | **Dampak** *(Angka / metrik kunci)* | Rekap manual turun dari ±2 jam → ≤15 menit/minggu (−88%); potensi kenaikan omzet 10–15% dalam 6 bulan bagi yang menerapkan rekomendasi. |
-| **Bisnis** *(Model bisnis & ROI singkat)* | Freemium B2C + micro B2B; Premium Rp49rb/bln, biaya di bawah Rp100rb/bln vs tools BI enterprise jutaan rupiah. Target 100 UMKM (Th-1) → 5.000 (Th-3). |
+| **Bisnis** *(Model bisnis & ROI singkat)* | Freemium B2C + micro B2B; Premium Rp49rb/bln, biaya di bawah Rp100rb/bln vs tools BI enterprise jutaan rupiah. Target 30 UMKM (Th-1) → 1.000 (Th-3). |
 
 ---
 

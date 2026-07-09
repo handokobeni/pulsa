@@ -76,7 +76,7 @@ Tim hanya **2 orang** dengan latar *engineering* — belum ada **UI/UX designer 
 
 | Milestone Utama | Output / Deliverable | PIC (Nama / Role) | Indikator Sukses |
 |---|---|---|---|
-| Open beta 50–150 UMKM + PWA polish | PWA *installable*, onboarding low-friction | Beni + Arsya | 150 UMKM aktif, MAU ≥60% |
+| Open beta hingga ~30 UMKM + PWA polish | PWA *installable*, onboarding low-friction | Beni + Arsya | 30 UMKM aktif, MAU ≥60% |
 | Aktivasi monetisasi freemium | Premium Rp49rb/bln live, payment gateway aktif | Arsya (Tech) | Konversi premium ≥8% |
 | Galang pre-seed (hibah BI/Kemenkop + akselerator) | Pitch deck v2, data traksi, runway plan | Beni (PM) | Pre-seed/akselerator secured (Rp150–250jt) |
 

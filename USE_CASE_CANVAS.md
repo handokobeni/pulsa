@@ -74,7 +74,7 @@ PULSA menyatukan transaksi multi-channel ke **satu ledger usaha**, lalu mengubah
 | **Metode** | Survei kuantitatif + wawancara mendalam + closed beta (in-app usage analytics) + case study |
 | **Target Responden** | UMKM F&B & retail, omzet Rp 5–100 jt/bln, sudah terima QRIS, di Bandung & Jabodetabek (distribusi target survei: 40% F&B, 30% retail, 20% jasa, 10% marketplace) |
 | **Metrik Sukses** | Retention 30-hari ≥40%; MAU ≥60%; ≥25% rekomendasi prioritas ditandai "diterapkan"; WTP Rp 50–100rb terkonfirmasi; NPS positif |
-| **Timeline Validasi** | Survei putaran 1 (N=7) selesai → putaran 2 (N≥30) berjalan → closed beta 20 UMKM (Bulan 8–9) → open beta 50–150 UMKM (Bulan 10–12) |
+| **Timeline Validasi** | Survei putaran 1 (N=7) selesai → putaran 2 (N≥30) berjalan → closed beta 20 UMKM (Bulan 8–9) → open beta hingga ~30 UMKM aktif (Bulan 10–12) |
 
 ---
 
